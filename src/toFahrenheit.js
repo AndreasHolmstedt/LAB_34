@@ -8,5 +8,11 @@ Använd följande formel för att räkna ut temperaturen:  F = C * 9/5 + 32.
 Den minsta möjliga temperaturen är -273.15 grader Celsius.*/
 
 function toFahrenheit (celsius) {
-  return celsius === Infinity || celsius === null || celsius < -273.15 ? NaN : Number(celsius) * 9/5 + 32
+  return celsius === Infinity ||
+         celsius === null ||
+         celsius === true ||
+         celsius === false ||
+        celsius < -273.15 ? NaN : Number(celsius) * 9/5 + 32
 }
+
+export { toFahrenheit };

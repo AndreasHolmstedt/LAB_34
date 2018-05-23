@@ -16,10 +16,10 @@ function canGetLicense (license, age) {
      license !== "BE" &&
      license !== "C" &&
      license !== "D"){
-       throw Error("Wrong license format.")
+       throw new Error("Wrong license format.")
      }
   if(age < 0 || age > 120 || isNaN(Number(age))){
-    throw Error("Age must be a number between 0 and 120.")
+    throw new Error("Age must be a number between 0 and 120.")
   }
   return age < 18 ? false :
          license == "B" || license === "BE" ? true :
@@ -28,4 +28,4 @@ function canGetLicense (license, age) {
          age < 24 ? false : true
 }
 
-canGetLicense("d", 23)
+export {canGetLicense};

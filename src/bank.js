@@ -64,3 +64,5 @@ function transfer(accountSender, accountReciever, amount){
     accountReciever.balance += Number(amount);
   }
 }
+
+export {deposit, withdraw, transfer, kalle, greta }
