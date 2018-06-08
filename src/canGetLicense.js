@@ -10,6 +10,8 @@ D == 24
 */
 
 function canGetLicense (license, age) {
+  if(typeof license !== "string")
+    throw new Error("License must be a string");
   license = license.toUpperCase()
   if(license !== "A" &&
      license !== "B" &&

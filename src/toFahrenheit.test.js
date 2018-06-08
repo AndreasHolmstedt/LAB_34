@@ -1,6 +1,6 @@
 import { toFahrenheit } from './toFahrenheit';
 
-describe("Fahrenheit converter test suite", ()=> {
+describe("Fahrenheit converter test suite", () => {
   test("...", () => {
     expect(toFahrenheit(5)).toBe(5 * 9/5 + 32)
   })
