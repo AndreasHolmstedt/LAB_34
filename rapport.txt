@@ -1,0 +1,46 @@
+Temperaturomvandling
+Fråga 1.
+  I många av testen har vi testat samma saker. En tydlig skillnad är att vi har gjort beräkningar
+  som parametrar till förväntat värde. Att göra beräkningar som parametrar har för och nackdelar.
+  Det blir väldigt tydligt vad det är man testar och fungerar bra på "enklare" tester. Har man dock
+  mer komplicerade testfall kan det bli kontraproduktivt då man ändå riskerar att göra fel i parametern.
+  Vi har gjort lite mer utförliga tester, till exempel strängar med nummer i olika längd.
+  Den andra gruppen har varit mer nogranna med att beskriva sina tester i kommentarer.
+
+Fråga 2.
+  Ett viktigt testfall som vi har missat är -273.15, vilket i den här funktionen är ett gränsfallstest, då det ska returna
+  ett tal medans 273.16 ska returnera NaN.
+
+Fråga 3.
+  Vi anser att det viktigaste är att testa olika typer av parametrar som initiala tester, då JS inte är typbestämt.
+  Viktigt är också att testa gränsfallsparametrar. I den här funktionen är beräkningen väldigt enkel vilket gör
+  att olika sorters nummer-tester är mindre prioriterat, men de bör ändå utföras.
+
+Körkort
+Fråga 1.
+  Dessa tester skiljde sig tydligare mellan grupperna. Vi har inga testfall med som förväntas returnera false vilket är
+  en miss. Den andra gruppen har inte några tester som förväntas returnera Error vilket också finnas.
+
+Fråga 2.
+  Vi har som nämnt missat att göra tester för false-värden vilket är självklart borde ha funnits.
+  Det beror troligtvis på att vi har varit mindre nogranna med vår processmetod.
+
+Fråga 3.
+  De viktigaste testfallen för denna metod är parametrar som förväntas returnera true, false och Error. I retrospekt
+  anser vi att båda grupperna kunde varit mer utförliga med sina tester. Flera olika data-typer kunde testats och även fler
+  gränsfallstester kunde utförts.
+
+Bank
+Fråga 1.
+  Flera av testerna är samma för båda grupperna. Vi har förhållit oss lite annorlunda till uppgiften och fokuserat
+  på att testa de parametrar som förväntas returnera Error. Den andra gruppen har varit mer utförliga i sina tester då
+  de också testat att funktionerna ger side effects på objekten.
+
+Fråga 2.
+  Vi har som nämnt inte gjort några tester för att kontrollera side effects. Anledningen att vi missat det är troligtvis
+  att det innefattar att testa objekt som står utanför själva funktionen.
+
+Fråga 3.
+  De viktigaste testfallen för dessa funktioner är att testa att felaktiga parametrar returnerar Error. Till exempel att
+  det inte går att föra över pengar till någon om dessa pengar inte finns. Eller att man inte kan föra över pengar till
+  ett konto som inte existerar.
